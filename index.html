@@ -35,7 +35,7 @@
         flex-flow: column nowrap;
         justify-content: space-evenly;
         align-items: center;
-        padding-top: 4vh;
+        padding-top: 5vh;
         box-sizing: border-box;
       }
       .border > div {
@@ -102,12 +102,12 @@
       .text h3 {
         font-family: 'Noto Kufi Arabic', sans-serif;
         font-weight: 200;
-        font-size: 170%;
+        font-size: 16pt;
         margin: 0px 0px;
         padding: 0px;
       }
       .text h3.title {
-        font-size: 185%;
+        font-size: 18pt;
         font-weight: 300;
       }
 
@@ -120,10 +120,18 @@
         margin-bottom: 4vh;
       }
       .signature h4 {
-        font-size: 130%;
+        font-size: 14pt;
         margin: 0.5em 0px;
         margin-right: 10vw;
         padding: 0px;
+      }
+
+      @media print{
+        @page {
+          size: landscape;
+          margin: 0px;
+          padding: 0px;
+        }
       }
     </style>
   </head>
