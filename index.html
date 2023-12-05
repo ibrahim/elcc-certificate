@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@200;300&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <style>
+      body {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+      }
+      .bg {
+        opacity: 0;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        background-image: url('./MBS.jpg');
+        background-size: 100%;
+        width: 100vw;
+        height: calc(100vw * 0.707);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        box-sizing: border-box;
+      }
+      .border {
+        background-image: url('./certificate.svg');
+        background-size: 100%;
+        width: 100vw;
+        height: calc(100vw * 0.707);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-top: 4vh;
+        box-sizing: border-box;
+      }
+      .border > div {
+        border: 0px solid black;
+      }
+      .footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-grow: 1;
+        padding-bottom: 7vh;
+      }
+      .mcit-logo {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+      }
+      .mcit-logo img {
+        width: 25vw;
+      }
+
+      .shahada {
+        display: flex;
+        padding-top: 3vh;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      .shahada img {
+        width: 15vw;
+      }
+      .footer > div {
+        width: 30vw;
+        border: 0px solid black;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .mbs-logo {
+        justify-content: flex-end!important;
+        align-items: flex-end!important;
+        transform: translate(-1vw, -1vh);
+      }
+      .mbs-logo img {
+        width: 18vw;
+      }
+      .elcc-qr img {
+        width: 16vw;
+        transform: translateY(3vw);
+      }
+      .text{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-1vw);
+      }
+      .text h3 {
+        font-family: 'Noto Kufi Arabic', sans-serif;
+        font-weight: 200;
+        font-size: 170%;
+        margin: 0px 0px;
+        padding: 0px;
+      }
+      .text h3.title {
+        font-size: 185%;
+        font-weight: 300;
+      }
+
+      .signature{
+        display: flex;
+        font-family: 'Rubik', sans-serif;
+        flex-flow: column nowrap!important;
+        justify-content: center;
+        align-items: center!important;
+        margin-bottom: 4vh;
+      }
+      .signature h4 {
+        font-size: 130%;
+        margin: 0.5em 0px;
+        margin-right: 10vw;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+      <div class="border">
+        <div class="bg"></div>
+        <div class="mcit-logo"><img src="./mcit-logo.png"/></div>
+        <div class="shahada"><img src="./shahada.svg"/></div>
+        <div class="text">
+            <h3>الاسم: أحمد محمد يحيى</h3>
+            <h3>الرقم القومي: 1234567891011</h3>
+            <h3 class="title">قد أتم تدريبات مبادرة تأهيل الشباب من أجل العمل المهني الحر</h3>
+        </div>
+        <div class="footer">
+          <div class="signature">
+            <h4>رئيس مجلس الإدارة</h4>
+            <h4>أشرف توفيق</h4>
+          </div>
+          <div class="elcc-qr"><img src="./elcc-qr.png"/></div>
+          <div class="mbs-logo"><img src="./mbs-logo.svg"/></div>
+        </div>
+      </div>
+  </body>
+</html>
